@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react"
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton"
 import "./card.css"
 import { Link } from "react-router-dom"
-
+ 
 const Cards = ({movie}) => {
 
     const [isLoading, setIsLoading] = useState(true)
@@ -10,7 +10,7 @@ const Cards = ({movie}) => {
     useEffect(() => {
         setTimeout(() => {
             setIsLoading(false)
-        }, 2000)
+        }, 1500)
     }, []) 
 
     return <>
@@ -18,7 +18,7 @@ const Cards = ({movie}) => {
         isLoading
         ?
         <div className="cards">
-            <SkeletonTheme color="#202020" highlightColor="#444">
+             <SkeletonTheme color="#202020" highlightColor="#444">
                 <Skeleton height={300} duration={2} />
             </SkeletonTheme>
         </div>
@@ -41,3 +41,4 @@ const Cards = ({movie}) => {
 }
 
 export default Cards
+

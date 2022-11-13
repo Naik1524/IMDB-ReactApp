@@ -1,6 +1,6 @@
 .cards {
     display: inline-block;
-    transition: transform .2 s;
+    transition: transform .2s;
     position: relative;
     border-radius: 10px;
     overflow: hidden;
